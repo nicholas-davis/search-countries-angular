@@ -37,9 +37,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ### Built With
 
-* [![Angular][Angular.io]][Angular-url]
-* [![TypeScript][TypeScriptLang.org]][TypeScript-url]
-* [![GraphQL][https://graphql.org]][GraphQL-url]
+* ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+* ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+* ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 
 <!-- CONTACT -->
 ## Contact
@@ -52,10 +52,3 @@ Nicholas Davis - [NicholasDavis.com](https://NicholasDavis.com) - hire@nicholasd
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: screenshot/image.png
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[TypeScriptLang.org]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
-[TypeScript-url]: https://www.typescriptlang.org/
-[GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-[TypeScript-url]: https://graphql.org
-
