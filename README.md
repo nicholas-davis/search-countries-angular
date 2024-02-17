@@ -57,4 +57,5 @@ Nicholas Davis - [NicholasDavis.com](https://NicholasDavis.com) - hire@nicholasd
 [TypeScriptLang.org]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
 [TypeScript-url]: https://www.typescriptlang.org/
 [GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+[TypeScript-url]: https://graphql.org
 
