@@ -6,10 +6,10 @@
 <h5 align="center">Streaming data via GraphQL</h5>
 
   <p align="center">
-    search_ountries
+    search_countries
     <br />
     <br />
-    <a href="https://nicholasdavis.com/projects/rock-paper-scissors-game" target="_blank">Demo</a> 
+    <a href="https://nicholasdavis.com/projects/search-countries" target="_blank">Demo</a> 
   </p>
 </div>
 <br />
