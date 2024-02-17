@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>🇺🇸 Search Countries 🇺🇸</h1>
+    <h5>Streaming data via GraphQL</h5>
+
+    <mat-form-field class="example-form-field">
+      <mat-label>Countries</mat-label>
+      <input matInput type="text" [formControl]="searchControl" placeholder="Search..." (input)="clearSearch()">
+    </mat-form-field>
+
+    <div *ngIf="isLoading; else content">
+      <mat-spinner class="results__loader"></mat-spinner>
+    </div>
+    <ng-template #content>
+      <router-outlet></router-outlet>
+    </ng-template>
+  </div>
+</div>
