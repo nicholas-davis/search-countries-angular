@@ -11,7 +11,7 @@ import { HttpLink } from 'apollo-angular/http';
         return {
           cache: new InMemoryCache(),
           link: httpLink.create({
-            uri: "https://countries.trevorblades.com/"
+            uri: "https://countries.trevorblades.com"
           })
         };
       },

@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, filter, switchMap, tap } from 'rxjs/operators';
 import { SwapiService } from '../../services/swapi.service';
 import { Subscription } from 'rxjs';
-import { Country } from '../../models/country.model';
 
 @Component({
   selector: 'app-search',
