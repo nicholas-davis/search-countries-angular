@@ -3,7 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, filter, switchMap, tap } from 'rxjs/operators';
-import { SwapiService } from '../../services/swapi.service';
+import { CountriesService } from '../../services/countries.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   isLoading: boolean = false;
   private searchSubscription: Subscription | undefined;
 
-  constructor(private swapiService: SwapiService, private router: Router) { }
+  constructor(private countriesService: CountriesService, private router: Router) { }
 
   ngOnInit(): void {
     this.searchSubscription = this.searchControl.valueChanges.pipe(
@@ -25,7 +25,7 @@ export class SearchComponent implements OnInit, OnDestroy {
       distinctUntilChanged(),
       tap(() => this.isLoading = true),
       switchMap((value: string) => {
-        return this.swapiService.searchCountries(value || '');
+        return this.countriesService.searchCountries(value || '');
       }),
       debounceTime(500),
       tap(() => this.isLoading = false),

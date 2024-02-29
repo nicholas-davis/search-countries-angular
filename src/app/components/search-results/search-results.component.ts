@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { SwapiService } from '../../services/swapi.service';
+import { CountriesService } from '../../services/countries.service';
 import { Country } from '../../models/country.model';
 
 @Component({
@@ -14,14 +14,14 @@ export class SearchResultsComponent implements OnInit, OnDestroy {
   noResultsFound: boolean = false;
   private searchSubscription: Subscription | undefined;
 
-  constructor(private route: ActivatedRoute, private swapiService: SwapiService) { }
+  constructor(private route: ActivatedRoute, private countriesService: CountriesService) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       const query = params['q'];
       if (query) {
         // Call the searchCountries method with the query
-        this.searchSubscription = this.swapiService.searchCountries(query).subscribe(countries => {
+        this.searchSubscription = this.countriesService.searchCountries(query).subscribe(countries => {
           this.countries = countries;
           this.noResultsFound = this.countries.length === 0; // Set flag based on countries length
         });

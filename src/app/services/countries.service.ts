@@ -11,7 +11,7 @@ interface CountryResponse {
 @Injectable({
   providedIn: 'root'
 })
-export class SwapiService {
+export class CountriesService {
   constructor(private apollo: Apollo) { }
 
   searchCountries(query: string): Observable<Country[]> {
